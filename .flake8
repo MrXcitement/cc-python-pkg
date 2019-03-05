@@ -1,0 +1,11 @@
+[flake8]
+exclude =
+    __pycache__
+    .venv/
+    docs
+
+# remove errors due to cookiecutter template variables
+per-file-ignores =
+    {{cookiecutter.repo_name}}/src/{{cookiecutter.package_name}}/__main__.py:E999
+    {{cookiecutter.repo_name}}/tests/test_{{cookiecutter.package_name}}.py:E999,E201,E202
+

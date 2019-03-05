@@ -1,0 +1,17 @@
+{
+    "author": "Mike Barker",
+    "email": "mike@thebarkers.com",
+    "project_name": "Example",
+    "project_description": "Example displays a greeting to the console.",
+    "repo_domain": "https://github.com",
+    "repo_user": "mrxcitement",
+    "repo_name": "python-{{ cookiecutter.project_name|lower|replace(' ','-')|replace('-','_') }}",
+    "repo_url": "{{ cookiecutter.repo_domain }}/{{ cookiecutter.repo_user }}/{{ cookiecutter.repo_name }}",
+    "package_name": "{{ cookiecutter.project_name|lower|replace(' ','-')|replace('-','_') }}",
+    "pypi_user": "mrxcitement",
+    "pypi_name": "{{ cookiecutter.project_name|lower|replace('_','-') }}",
+    "cli_name": "{{ cookiecutter.pypi_name }}", 
+    "release_date": "{% now 'local' %}",
+    "year": "{% now 'local', '%Y' %}",
+    "version": "0.0.0"
+}

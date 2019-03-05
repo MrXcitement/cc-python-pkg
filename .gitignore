@@ -1,0 +1,18 @@
+# Compiled python files
+*.pyc
+__pycache__/
+
+# Pytest folders
+.pytest_cache/
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+
+# Virtual env
+/.venv*/
+
+# Visual Studio Code
+/.vscode/

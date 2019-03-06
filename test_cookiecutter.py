@@ -9,5 +9,5 @@ def test_bake(cookies):
     result = cookies.bake()
 
     assert result.exit_code == 0
-    assert result.project.basename == 'python-hello'
+    assert result.project.basename == 'python-example'
     assert result.project.isdir()

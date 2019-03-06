@@ -4,7 +4,6 @@ import subprocess
 import sys
 
 
-
 def check_output(process):
     """Return processes output as a string"""
     result = subprocess.check_output(process)
@@ -15,7 +14,7 @@ def check_output(process):
 
 def test_cli_greet():
     """Test the cli greet function."""
-    import {{ cookiecutter.package_name }}
+    import {{ cookiecutter.package_name }}.cli
 
     result = {{ cookiecutter.package_name }}.cli.greet().lower()
     assert 'hello' in result
